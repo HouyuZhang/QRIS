@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## QRIS: a machine learning framework reveals diverse DNA shape effects on retrovirus integration specificity
 
 **Author**: Houyu Zhang
@@ -18,3 +19,7 @@ Our qualitative and quantitative evaluation of DNA shape and DNA sequence reveal
   Specifically, the `bash script` and `python script` is for processing data and corresponding `R scripts` is used for downstream analysis, statistics and plotting.
 
    
+=======
+# RetrovirusIntegPrefer
+ Store all rawdata, codes and results 
+>>>>>>> parent of e99fd38 (update)
