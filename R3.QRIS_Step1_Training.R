@@ -1,4 +1,4 @@
-# This script is used for running GLM model on retro
+# This script is the Step1 for QRIS framework that run GLM model on retrovirus
 
 #setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd("./")
@@ -17,8 +17,6 @@ registerDoParallel(cl)
 # ==============================================================================
 files <- list.files("./",pattern = ".*.fa")
 prefixs <- sub("\\.fa","",files)
-
-#prefixs <- prefixs[grep("shuffled",prefixs)]
 
 for (sample_prefix in prefixs){
   
@@ -58,11 +56,8 @@ for (sample_prefix in prefixs){
     c("1-MGW"), c("1-HelT"), c("1-ProT"), c("1-Roll"), c("1-EP"),
     c("1-Stretch"), c("1-Tilt"), c("1-Buckle"), c("1-Shear"), c("1-Opening"),
     c("1-Rise"), c("1-Shift"), c("1-Stagger"), c("1-Slide"),
-    c("1-mer"),c("2-mer"),c("3-mer")#,
-    #c("1-mer","2-mer"),c("2-mer","3-mer"),c("1-mer","3-mer"),
-    #c("1-mer","2-mer","3-mer"),
-    # c("1-MGW","1-ProT","1-Roll","1-HelT"), #4shapes
-    # c(all_shape_mer)  #14shapes
+    c("1-MGW","1-ProT","1-Roll","1-HelT"), #4shapes
+    c(all_shape_mer)  #14shapes
   )
   
   # 3. Start trainning ----
@@ -73,14 +68,13 @@ for (sample_prefix in prefixs){
   
   #Only for motif
   trainning_final <- data.frame(retro_cut = bed$cut, bed[,6:56])
-  #Cut sites as 1, uncut sites as 0
+  #Integration sites as 1, random sites as 0
   trainning_final$retro_cut <- factor(trainning_final$retro_cut, levels=c(0,1),labels = c("uncut","cut"))
   result_prefix <- paste0(sample_prefix, "_motif")
   
   cat("-> Start trainning on", result_prefix, "<- ")
   
-  #train_grid <- expand.grid(.alpha = seq(0, 0.5, length = 5), .lambda = c((1:3)/10))
-  train_grid <- expand.grid(.alpha = 0.1, .lambda = 0.1)
+  train_grid <- expand.grid(.alpha = seq(0, 0.5, length = 5), .lambda = c((1:3)/10))
   set.seed(0218)
   trcl <- trainControl(method = "cv", number = 10, search = "grid", returnResamp = "final", 
                        savePredictions = "final", classProbs = TRUE, summaryFunction = prSummary, allowParallel = T)
