@@ -17,9 +17,3 @@ Our qualitative and quantitative evaluation of DNA shape and DNA sequence reveal
 - Script head with series number (R1, R2, R3, R4) is for specific analysis follows the Results order in the mainn text.
 
   Specifically, the `bash script` and `python script` is for processing data and corresponding `R scripts` is used for downstream analysis, statistics and plotting.
-
-   
-=======
-# RetrovirusIntegPrefer
- Store all rawdata, codes and results 
->>>>>>> parent of e99fd38 (update)
