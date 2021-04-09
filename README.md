@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## QRIS: a machine learning framework reveals diverse DNA shape effects on retrovirus integration specificity
 
 **Author**: Houyu Zhang
