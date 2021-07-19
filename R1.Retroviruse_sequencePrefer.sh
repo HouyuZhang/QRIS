@@ -48,13 +48,3 @@ done
 
 zip -r all_meme_result.zip *meme*
 rm -f *fa.*
-
-
-
-
-
-
-
-
-
-
