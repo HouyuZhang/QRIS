@@ -1,6 +1,0 @@
-AUROC	Sensitivity	Specificity	AUPRC	Precision	Recall	F-score	accuracy	plan
-motif	0.62369445	0.6111	0.5691	0.607967926144338	0.594050104384134	0.5691	0.581307456588356	0.5901	HTLV-1_hematopoietic_2017Furuta_trainning_ext25bp_motif
-shape_MGW,ProT,Roll,HelT	0.64379977	0.5671	0.646	0.618105295784008	0.598757994253406	0.646	0.621482514791476	0.60655	HTLV-1_hematopoietic_2017Furuta_trainning_ext25bp_shape_1-MGW,1-ProT,1-Roll,1-HelT
-motif + MGW,ProT,Roll,HelT	0.6523072	0.5843	0.6435	0.628438365498048	0.607533987915408	0.6435	0.625	0.6139	HTLV-1_hematopoietic_2017Furuta_trainning_ext25bp_motif_shape_1-MGW,1-ProT,1-Roll,1-HelT
-shape_14shapes	0.66730093	0.583	0.6614	0.645705563152617	0.613316023738872	0.6614	0.636451116243264	0.6222	HTLV-1_hematopoietic_2017Furuta_trainning_ext25bp_shape_14shapes
-motif + 14shapes	0.67082083	0.588	0.6592	0.64929121815833	0.615384615384615	0.6592	0.636539204325995	0.6236	HTLV-1_hematopoietic_2017Furuta_trainning_ext25bp_motif_shape_14shapes
