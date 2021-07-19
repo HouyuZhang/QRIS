@@ -1,6 +1,6 @@
 #!/bin/bash
 ##########################################################################
-#This script is for retroviruse local pattern analysis
+#This script is for retroviruses local pattern analysis
 #Issue report on Hughiez047@gmail.com
 #Copyright (c) 2020 __YenLab@SKLEH__. All rights reserved.
 ##########################################################################
