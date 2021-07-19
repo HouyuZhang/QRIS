@@ -10,7 +10,7 @@ ln -sf /public/home/zhy/scripts/generate_shapes.R .
 
 for i in arch/*.bed
 do
-	#Make sure the scafford and patch are removed from bed file
+	#Make sure the scaffold and patch are removed from bed file
 	#grep -vE ${CONSENSUS_REMOVE} ${i} > tmp && mv tmp ${i}
 
 	base=`basename ${i} .bed`

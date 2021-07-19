@@ -13,7 +13,7 @@ cl <- makePSOCKcluster(6)
 registerDoParallel(cl)
 
 # ==============================================================================
-# 1. Main trainning codes
+# 1. Main training codes
 # ==============================================================================
 files <- list.files("./",pattern = ".*.fa")
 prefixs <- sub("\\.fa","",files)
@@ -60,7 +60,7 @@ for (sample_prefix in prefixs){
     c(all_shape_mer)  #14shapes
   )
   
-  # 3. Start trainning ----
+  # 3. Start training ----
   #For store feature importance
   varImp_list <- list()
   #For store result ML performance matrices
@@ -115,7 +115,7 @@ for (sample_prefix in prefixs){
       result_prefix <- paste0(sample_prefix, "_", trainning_plan,"_",paste(featureName, collapse = ","))
       result_prefix <- sub("1-MGW,1-HelT,1-ProT,1-Roll,1-EP,1-Stretch,1-Tilt,1-Buckle,1-Shear,1-Opening,1-Rise,1-Shift,1-Stagger,1-Slide","14shapes",result_prefix)
       
-      cat("-> Start trainning on", result_prefix, "<- ")
+      cat("-> Start training on", result_prefix, "<- ")
       
       #train_grid <- expand.grid(.alpha = seq(0, 0.5, length = 5), .lambda = c((1:3)/10))
       train_grid <- expand.grid(.alpha = 0.1, .lambda = 0.1)
@@ -127,7 +127,7 @@ for (sample_prefix in prefixs){
                             method = "glmnet", preProc = c("range"), trControl = trcl,
                             metric = "AUC", tuneGrid = train_grid)
       
-      cat("Trainning finished\n")
+      cat("Training finished\n")
       
       res_table <- fitted_model$pred[,c("pred","obs","uncut","cut")]
       AUROC <- twoClassSummary(res_table, lev = levels(res_table$obs))
