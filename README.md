@@ -14,7 +14,7 @@ Many efforts were made to understand its integration specificity and found diver
 
 Our qualitative and quantitative evaluation of DNA shape and DNA motif revealed their diverse roles in regulating the retrovirus integration specificity. Our findings may help more precisely control the lentivirus vector for gene therapy and disturb the retrovirus integration during the pathogenic process in the future. 
 
-<img align="left" width=1000 src="https://github.com/YenLab/QRIS/blob/main/GraphicalAbstract.png">
+<img align="left" width=1000 src="https://github.com/YenLab/QRIS/blob/main/GraphicalAbstract.pdf">
 
 ## Scripts organization
 
