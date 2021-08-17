@@ -14,7 +14,7 @@ Many efforts were made to understand its integration specificity and found diver
 
 Our qualitative and quantitative evaluation of DNA shape and DNA motif revealed their diverse roles in regulating the retrovirus integration specificity. Our findings may help more precisely control the lentivirus vector for gene therapy and disturb the retrovirus integration during the pathogenic process in the future. 
 
-![Graphical abstract](E:\OneDrive\1_Yenlab\GitHub\QRIS\Graphicalabstract.png)
+![](.\Graphicalabstract.png)
 
 ## Scripts organization
 
@@ -24,7 +24,6 @@ All raw, intermediate, final data and all scripts here can fully reproduce the p
 
   Specifically, the `bash script` is for processing data and corresponding `R scripts` is used for downstream analysis, statistics and plotting.
   
-
 - QRIS_Rawdata: Store raw data, shuffled data, and R object of DNA shape values. These files if for QRIS_Step1.
 - QRIS_Results: store machine learning results and can be visualized using QRIS_Step2.
 
