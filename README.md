@@ -1,10 +1,11 @@
 # **QRIS: a machine learning framework to investigate the determinants of retrovirus integration specificity**
+[![Preprint Available](https://img.shields.io/badge/Preprint-online-green.svg)]() [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-**Author**: Houyu Zhang
+**:writing_hand:Author**: Houyu Zhang
 
-**Email**: Hughiez047@gmail.com
+**:email:Email**: Hughiez047@gmail.com
 
-#Copyright (c) 2021 YenLab@SKLEH. All rights reserved.
+Copyright (c) 2021 YenLab@SKLEH. All rights reserved.
 
 ## Introduction
 
@@ -16,7 +17,7 @@ Our qualitative and quantitative evaluation of DNA shape and DNA motif revealed 
 
 <img align="left" width=1000 src="https://github.com/YenLab/QRIS/blob/main/GraphicalAbstract.png">
 
-## Scripts organization
+## :file_folder:Scripts organization
 
 All raw, intermediate, final data and all scripts here can fully reproduce the paper.
 
@@ -27,6 +28,6 @@ All raw, intermediate, final data and all scripts here can fully reproduce the p
 - QRIS_Rawdata: Store raw data, shuffled data, and R object of DNA shape values. These files if for QRIS_Step1.
 - QRIS_Results: store machine learning results and can be visualized using QRIS_Step2.
 
-## Citation
+## :bookmark_tabs:Citation
 
 QRIS: a machine learning framework to investigate the determinants of retrovirus integration specificity. Sci Sin Vitae  
