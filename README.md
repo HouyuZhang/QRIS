@@ -30,4 +30,5 @@ All raw, intermediate, final data and all scripts here can fully reproduce the p
 
 ## :bookmark_tabs:Citation
 
-QRIS: a machine learning framework to investigate the determinants of retrovirus integration specificity. Sci Sin Vitae  
+Zhang H Y, Yang L, Xu J, et al. [QRIS: a machine learning framework to investigate the determinants of retroviral integration specificity](10.1360/SSV-2021-0118) (in Chinese). Sci Sin Vitae, 2022, 52
+
